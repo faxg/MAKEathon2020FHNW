@@ -4,13 +4,13 @@
 
   let Intro = {
     icon: "fa-search",
-    smallTitle: "YB Hackathon 2020",
+    smallTitle: "MAKEathon 2020",
     bigTitle: "Welcome",
     border: "success",
     links: [
       {
         text: "Github Repository",
-        href: "https://github.com/faxg/ybhackathon-starter",
+        href: "https://github.com/faxg/MAKEathon2020FHNW",
       },
       {
         text: "Azure Static Web Apps (SWA)",
@@ -93,14 +93,14 @@
   }
   .badge-icon,
   .qr-code {
-    height: 128px;
+    width: 40%;
   }
 </style>
 
 <div class="row">
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-justify-content-center">
     <InfoCard props={Intro}>
-      Welcome to the YB Hackathon 2020 Azure Starter Template. You'll find
+      Welcome to the MAKEathon 2020 @ FHNW Azure Starter Template. You'll find
       information on:
       <ul>
         <li>Azure Services you could use</li>
@@ -199,7 +199,7 @@
   <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 justify-content-center">
     <InfoCard props={starterTemplate}>
       This is the
-      <b>YB Hackathon Starter</b>
+      <b>MAKEathon Hackathon Starter</b>
       on Azure.&nbsp;
       <br />
       You can use this as a starting point for your own web application. It's
@@ -223,9 +223,10 @@
         </li>
       </ul>
       You can clone & deploy this to Azure in 5 minutes. You'll get:
+      <br/>
       <img
         class="img-fluid"
-        width="100%"
+        width="70%"
         alt="SWA Overview"
         src="https://azurecomcdn.azureedge.net/cvt-4abbf0604519d6747e8628e7d4a627c7bc7d78cea01076877c54698df471f916/images/page/services/app-service/static/value-prop-2.png" />
     </InfoCard>
