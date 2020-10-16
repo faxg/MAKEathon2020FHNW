@@ -117,8 +117,8 @@
       <div class="embed-responsive embed-responsive-16by9">
         <iframe
           title="Welcome to the Event"
-          class="embed-responsive-item"
-          src="https://www.youtube.com/embed/gWEYfyLu1ew"
+          class="embed-responsive-item" 
+          src="https://www.youtube.com/embed/GhFUhzTnYUU"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen />
