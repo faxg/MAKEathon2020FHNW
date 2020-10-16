@@ -31,7 +31,7 @@
           <Redirect path="/home" />
         </Route>
 
-        <Route path="/home" component={Home} />
+        <Route path="/home" component={Home} {userInfo}/>
 
         <Route path="/login" component={Login} />
         <Route path="/profile" component={Profile} {userInfo} />

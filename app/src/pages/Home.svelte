@@ -2,6 +2,9 @@
   import InfoCard from "../components/InfoCard.svelte";
   import util from '../utils/auth-utils.js'
 
+  export let userInfo = undefined;
+
+
   let Intro = {
     icon: "fa-search",
     smallTitle: "MAKEathon 2020",
@@ -105,14 +108,22 @@
       <ul>
         <li>Azure Services you could use</li>
         <li>How to claim your "Learner" Azure Hero Badge</li>
-        <li>How to find Learning material and get support</li>
+        <li>How to find further Learning material and get support</li>
         <li>How to fork & use this Starter Template</li>
-        <li>
-          How to share your PII with us (a.k.a. sign up for
-          <code>Microsoft.source</code>
-          newsletter)
-        </li>
+ 
       </ul>
+
+      
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          title="Welcome to the Event"
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/gWEYfyLu1ew"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen />
+      </div>
+
     </InfoCard>
   </div>
 
@@ -171,10 +182,15 @@
       You can claim your Azure Hero Learner Badge here.
       <br/>
       <span>
+        {#if userInfo}
         <img alt="Azure Heroes Learner" class="img img-fluid badge-icon" 
             src="{`${util.API}/get-badge?type=learner&what=badger`}" />
         <img alt="Azure Heroes QR" class="img img-fluid qr-code" 
-            src="{`${util.API}/get-badge?type=learner&what=qr`}" />
+              src="{`${util.API}/get-badge?type=learner&what=qr`}" />
+        {:else}
+        Please log in to claim your "Learner" Badge.
+        {/if}
+
       </span>
     </InfoCard>
   </div>
@@ -207,19 +223,16 @@
       (for now) :
       <ul>
         <li>
-          <b>Frontend</b>: website that contains links to docs on the
-          Event and selected Azure Cloud Services. Written in
+          <b>Frontend</b>: this website. Written in
           <a href="https://svelte.dev/">Svelte</a>, but many frameworks are
           supported (Angular, React, ...). Just build your own frontend in the
-          <code>/app</code>
-          and tell Azure where to find the
-          <code>npm build</code>
-          results. (e.g. /app/public/build)
+          <code>/app</code> and tell Azure where to find the
+          <code>npm build</code> results. (e.g. /app/public)
         </li>
         <li>
           <b>API</b>: Serverless (Azure Functions) backend
           <code>/api</code>. Implement your serverless backend in
-          JavaScript/Typescript.
+          JavaScript/Typescript. 
         </li>
       </ul>
       You can clone & deploy this to Azure in 5 minutes. You'll get:
