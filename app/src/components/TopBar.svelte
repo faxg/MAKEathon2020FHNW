@@ -48,7 +48,7 @@
             <a class="dropdown-item" href="/profile">My Profile</a>
             <a class="dropdown-item" href="http://aka.ms/staticwebapps" target="_blank">Documentation</a>
             <div class="dropdown-divider" />
-            <a class="dropdown-item" href="/.auth/logout">Logout</a>g
+            <a class="dropdown-item" href="/.auth/logout?post_logout_redirect_uri=/home">Logout</a>
           </div>
         </li>
       </ul>
