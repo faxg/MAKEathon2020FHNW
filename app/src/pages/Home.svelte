@@ -85,6 +85,9 @@
       },
     ],
   };
+
+
+
 </script>
 
 <style>
@@ -205,7 +208,7 @@
       To get started, here's a video with an overview on Azure Machine Learning.
     <p/>
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe src="https://channel9.msdn.com/Shows/AI-Show/Allup-Azure-ML/player" width="960" height="540" allowFullScreen frameBorder="0" title="What’s new with Azure Machine Learning - Microsoft Channel 9 Video"></iframe>
+        <iframe src="https://channel9.msdn.com/Shows/AI-Show/Allup-Azure-ML/player" width="480" height="270" allowFullScreen frameBorder="0" title="What’s new with Azure Machine Learning - Microsoft Channel 9 Video"></iframe>
       </div>
     </InfoCard>
   </div>

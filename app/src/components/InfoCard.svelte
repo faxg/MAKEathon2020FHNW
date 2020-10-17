@@ -20,7 +20,7 @@
 <style>
   .list-bottom {
     position : absolute;
-    bottom   : 0;
+    bottom   : 20px;
   }
 </style>
 
@@ -45,7 +45,7 @@
         <i class="fas {props.icon} fa-2x text-gray-300" />
       </div>
     </div>
-    <div class="row">
+    <div class="row h-100">
       <div class="col-12 h-100">
         <p>&nbsp;</p>
         <div class="h-100">
