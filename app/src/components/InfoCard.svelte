@@ -17,7 +17,12 @@
 
 </script>
 
-
+<style>
+  .list-bottom {
+    position : absolute;
+    bottom   : 0;
+  }
+</style>
 
 
 <!-- Start: Card Info -->
@@ -43,14 +48,14 @@
     <div class="row">
       <div class="col-12 h-100">
         <p>&nbsp;</p>
-        <div>
+        <div class="h-100">
           <slot>
             No Content provided !
           </slot>
           <p>&nbsp;</p>
 
           {#if props.links}
-            <ul class="list-inline">
+            <ul class="list-inline list-bottom">
               {#each props.links as link}
               <li class="list-inline-item">|| <a href="{link.href}">{link.text}</a> </li>
               {/each}

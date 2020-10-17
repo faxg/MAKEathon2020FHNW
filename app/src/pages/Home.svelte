@@ -181,8 +181,8 @@
 
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 justify-content-center">
     <InfoCard props={LearnerBadge}>
-      You can claim your Azure Hero "Learner" Badge here.
-      <br/>
+      You can claim your Microsoft Azure Hero "Learner" Badge here.
+      <p/>
       <span>
         {#if userInfo}
         <img alt="Azure Heroes Learner" class="img img-fluid badge-icon" 
@@ -190,7 +190,7 @@
         <img alt="Azure Heroes QR" class="img img-fluid qr-code" 
               src="{`${util.API}/get-badge?type=learner&what=qr`}" />
         {:else}
-        <p><b>You are not logged in</b> - please log in to see the QR code to claim your Badge.</p>
+        <h2>You are not logged in</h2> - please log in to see the QR code to claim your Badge.
         
         {/if}
 
@@ -201,8 +201,9 @@
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 justify-content-center">
     <InfoCard props={learningAndSupport}>
       Find help online. We have lots of articles, tutorials and videos
-      available.
-
+      available. 
+      To get started, here's a video with an overview on Azure Machine Learning.
+    <p/>
       <div class="embed-responsive embed-responsive-16by9">
         <iframe src="https://channel9.msdn.com/Shows/AI-Show/Allup-Azure-ML/player" width="960" height="540" allowFullScreen frameBorder="0" title="What’s new with Azure Machine Learning - Microsoft Channel 9 Video"></iframe>
       </div>
