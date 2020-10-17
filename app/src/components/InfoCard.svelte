@@ -48,7 +48,7 @@
     <div class="row h-100">
       <div class="col-12 h-100">
         <p>&nbsp;</p>
-        <div class="h-100">
+        <div class="h-100 pb-5">
           <slot>
             No Content provided !
           </slot>
