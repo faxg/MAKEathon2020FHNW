@@ -20,7 +20,7 @@ A running version of this here: https://aka.ms/MAKEathon2020
 ## How do I use this Template for my own App?
 
 1. Fork this repo on GitHub. It's a Template repository, so just click the green 
-[![Use this Template button](https://aka.ms/MAKEathon2020/blob/master/app/public/img/use-this-template.png?raw=true)](https://aka.ms/MAKEathon2020/generate) button
+[![Use this Template button](https://github.com/faxg/MAKEathon2020FHNW/raw/master/app/public/img/use-this-template.png)](https://aka.ms/MAKEathon2020/generate) button
 
 2. Go to your new repository and then: 
 [![Deploy to Azure button](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?feature.customportal=false#create/Microsoft.StaticApp)
