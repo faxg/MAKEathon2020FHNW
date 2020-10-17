@@ -105,6 +105,7 @@
     <InfoCard props={Intro}>
       Welcome to the MAKEathon 2020 @ FHNW Azure Starter Template. You'll find
       information on:
+      <p/>
       <ul>
         <li>Azure Services you could use</li>
         <li>How to claim your "Learner" Azure Hero Badge</li>
@@ -131,6 +132,7 @@
     <InfoCard props={Services}>
       You may already have an idea for a project or a challenge. Here are some
       useful Azure Services:
+      <p/>
       <ul>
         <li>
           <a
@@ -179,7 +181,7 @@
 
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 justify-content-center">
     <InfoCard props={LearnerBadge}>
-      You can claim your Azure Hero Learner Badge here.
+      You can claim your Azure Hero "Learner" Badge here.
       <br/>
       <span>
         {#if userInfo}
@@ -188,7 +190,8 @@
         <img alt="Azure Heroes QR" class="img img-fluid qr-code" 
               src="{`${util.API}/get-badge?type=learner&what=qr`}" />
         {:else}
-        Please log in to claim your "Learner" Badge.
+        <p><b>You are not logged in</b> - please log in to see the QR code to claim your Badge.</p>
+        
         {/if}
 
       </span>
@@ -201,13 +204,7 @@
       available.
 
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe
-          title="Intro to Static Web Apps"
-          class="embed-responsive-item"
-          src="https://www.youtube.com/embed/gWEYfyLu1ew"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen />
+        <iframe src="https://channel9.msdn.com/Shows/AI-Show/Allup-Azure-ML/player" width="960" height="540" allowFullScreen frameBorder="0" title="What’s new with Azure Machine Learning - Microsoft Channel 9 Video"></iframe>
       </div>
     </InfoCard>
   </div>
